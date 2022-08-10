@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="17" time="145.819">
+<testcase classname="F01_register | User can register with valid data" name="User should be able to register with valid username and password" time="8.445">
+<system-out><![CDATA[Given user go to register page..............................................passed
+When user enter a valid data................................................passed
+And user press on register button...........................................passed
+Then user register to the system successfully...............................passed
+And user logout.............................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="F02_login | Users can use login functionality to open their accounts" name="User could login with valid email and password" time="6.523">
+<system-out><![CDATA[Given user go to login page.................................................passed
+When user login with valid email and password...............................passed
+And user press on login button..............................................passed
+Then user login to the system successfully..................................passed
+]]></system-out>
+</testcase>
+<testcase classname="F02_login | Users can use login functionality to open their accounts" name="User can Follow using &quot;facebook&quot;" time="13.885">
+<system-out><![CDATA[When click on follow us "facebook"..........................................passed
+Then "https://www.facebook.com/nopCommerce" opened successfully.............passed
+]]></system-out>
+</testcase>
+<testcase classname="F02_login | Users can use login functionality to open their accounts" name="User can Follow using &quot;twitter&quot;" time="6.613">
+<system-out><![CDATA[When click on follow us "twitter"...........................................passed
+Then "https://twitter.com/nopCommerce" opened successfully..................passed
+]]></system-out>
+</testcase>
+<testcase classname="F02_login | Users can use login functionality to open their accounts" name="User can Follow using &quot;youtube&quot;" time="13.63">
+<system-out><![CDATA[When click on follow us "youtube"...........................................passed
+Then "https://www.youtube.com/user/nopCommerce" opened successfully.........passed
+]]></system-out>
+</testcase>
+<testcase classname="F03_resetPassword | User can reset her/his password successfully" name="Success message appear after user reset her/his password" time="7.612">
+<system-out><![CDATA[Given user go to account page...............................................passed
+And user choose change password.............................................passed
+When user enter new password................................................passed
+And user press on change password button....................................passed
+Then user changed password successfully.....................................passed
+]]></system-out>
+</testcase>
+<testcase classname="F04_search | Logged User can search for any product" name="User can search for product using his/her full name" time="6.159">
+<system-out><![CDATA[When user clicks on search field............................................passed
+And user search with name of product........................................passed
+Then user could find relative results.......................................passed
+]]></system-out>
+</testcase>
+<testcase classname="F04_search | Logged User can search for any product" name="User could make advanced search" time="5.182">
+<system-out><![CDATA[Given user choose advanced search...........................................passed
+When user choose specific category..........................................passed
+Then user choose manufacturer...............................................passed
+And user click on search button.............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="F05_addToWishlist | Logged user could add different products to wishlist" name="Add to wishlist" time="8.31">
+<system-out><![CDATA[Given user could select a product...........................................passed
+When user can add product to Wishlist.......................................passed
+Then product added to Wishlist successfully.................................passed
+]]></system-out>
+</testcase>
+<testcase classname="F06_filterWithColor | Logged user could filter with color" name="User filter products with specific color" time="5.848">
+<system-out><![CDATA[Given user go to category page..............................................passed
+When user select sub-category...............................................passed
+Then user filter products by color..........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="F07_selectCategories | Logged user can select different categories" name="Select random category then open sub-category" time="4.796">
+<system-out><![CDATA[When user enter to category page............................................passed
+Then open sub-category......................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="F08_chooseCurrencies | Logged User can choose between currencies" name="User can choose between currencies Euro/US" time="5.458">
+<system-out><![CDATA[When user click on currencies list..........................................passed
+Then user change the currency...............................................passed
+And currency changed successfully...........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="F09_selectTags | Logged user can select different tags" name="User can select tags" time="6.016">
+<system-out><![CDATA[Given user navigate to tags page............................................passed
+Then select random tags.....................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="F10_addToCompareList | Logged user can add different products to compare list" name="Add to compare list" time="7.293">
+<system-out><![CDATA[Given user select a product.................................................passed
+When user can add product to compare list...................................passed
+Then product added to compare list successfully.............................passed
+]]></system-out>
+</testcase>
+<testcase classname="F11_addToCart | Logged user can add different products to shopping cart" name="User add products to cart" time="5.49">
+<system-out><![CDATA[Given user can select a product.............................................passed
+When user can add product to shipping cart..................................passed
+And product added to cart successfully......................................passed
+]]></system-out>
+</testcase>
+<testcase classname="F11_addToCart | Logged user can add different products to shopping cart" name="User edit shopping cart" time="6.122">
+<system-out><![CDATA[Given user open shopping cart...............................................passed
+When User can change product quantity in shipping cart......................passed
+Then User can delete product from shipping cart.............................passed
+]]></system-out>
+</testcase>
+<testcase classname="F12_createSuccessfulOrder | Logged user can create successful order" name="User can create successful order" time="14.981">
+<system-out><![CDATA[Given go to shopping cart...................................................passed
+And accept the terms of service.............................................passed
+When click on check out button..............................................passed
+And Update address information..............................................passed
+Then confirm order..........................................................passed
+And order completed successfully............................................passed
+]]></system-out>
+</testcase>
+</testsuite>
